@@ -1,0 +1,32 @@
+[
+    {
+        "Nombre": "Merlot",
+        "Precio": "1000",
+        "descripcion": "El vino merlot se caracteriza por su finura y suavidad, sin dejar de ser aromático y carnoso. Es de color rubí muy intenso, de graduación mediana y envejece rápidamente sin perder calidad."                               
+    },
+    {
+        "Nombre": "Chardonnay",
+        "Precio": "3000",
+        "descripcion": "La chardonnay es una variedad de uva de piel verde usada para hacer vino blanco. Es originaria de la región vitícola de Borgoña, en el este de Francia, pero ahora crece en todas partes."
+    },
+    {
+        "Nombre": "Cabernet",
+        "Precio": "4500",
+        "descripcion": "la uva tiene una piel gruesa y las vides son naturalmente de bajo rendimiento, brotan tarde y tienen resistencia a la pudrición y a los insectos y a la consistencia y sabores que expresan el carácter de la variedad."
+    },
+    {
+        "Nombre": "Carménère",
+        "Precio": "4000",
+        "descripcion":"El Carménère se caracteriza por la mezcla de especias, frutas rojas maduras y sus notas herbales y minerales. tiene aromas a frutos negros como moras y grosellas, con notas especiadas, canela,"
+    },
+    {
+        "Nombre": "Pinot",
+        "Precio": "5000" ,
+        "descripcion":"El Carménère se caracteriza por la mezcla de especias, frutas rojas maduras y sus notas herbales y minerales. tiene aromas a frutos negros como moras y grosellas, con notas especiadas, canela,"
+    },
+    {
+        "Nombre": "Syrah",
+        "Precio": "3000",
+        "descripcion": "De sabor más fino y textura más suave que el Cabernet Sauvignon El sabor del merlot suele ser solo un poco tánico El Syrah es la tercera variedad tinta demayor fama mundial"
+    }
+]

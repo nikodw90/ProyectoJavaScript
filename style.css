@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; }
+  
+body {
+    background: url(https://i.pinimg.com/originals/90/ac/46/90ac466f4545185d42c78820c68e083e.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+    position: relative;
+}
+
+
+h1, h3{
+    color: #e9e6e5;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+h4{
+    color: #e9e6e5;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+
+}
+
+p, h3, h2{
+    color: #e9e6e5;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+.borde{
+    margin-bottom: 10px;
+}
+
+h2, p{
+    text-align: center;
+}
+
+.row{
+    background: rgba(184, 155, 27, 0.281);
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);;
+}
+
+.boton{
+    margin: 10px;
+    background: #961d0dc5;
+    color: #e9e6e5;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    transition: transform 0.5s;
+}
+.boton:hover {
+    background: cornsilk;
+    color: #787a7a75;
+     }
+
+.carrito{
+    background: rgba(255, 255, 255, 0.562);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 90%;
+}
+.carrito:hover{
+    background: #ec90069a ;
+}
+    
+.modal{
+    position: fixed;
+    width:100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.81);
+    display: none;
+
+    
+}
+.bodymodal{
+    width: 100%;
+    height: 100%;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: -o-inline-flex;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.bodymodal h3{
+    
+    text-align: center;
+    width: 400px;
+    background:rgb(109, 53, 7);
+
+}
+.bodymodal button{
+    width: 30px;
+    margin: 50px;
+    background: #961d0dc5;
+    color: #e9e6e5;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    transition: transform 0.5s;
+}
+.bodymodal button:hover{
+    background: cornsilk;
+    color: #787a7a75;
+}
+
+
