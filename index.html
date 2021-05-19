@@ -30,7 +30,13 @@
 
   <img class="carrito" src="../respaldo/imagen/carrito-de-compras.png" alt="">
   
-<div class="container" id="cards">
+  <div class="container">
+    <h1>carrito</h1>
+    <hr>
+    <div class="row" id="contenedor-productos"></div>
+  </div>
+
+<template class="container" id="templade-productos">
   <div class="row" id="contenido">
     <div class="col-sm-4">
       <h3>nombre</h3>
@@ -38,7 +44,8 @@
         <h4>precio</h4>
         <input class="boton" type="button" value="Agregar" id="vino1" onclick="agregar(1000)" >
     </div> 
-</div>
+  </div>
+</template>
 
 <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"
