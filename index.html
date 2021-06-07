@@ -1,57 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Embajadora de Vinos</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="main.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#bla"  />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&display=swap" rel="stylesheet">
+    <title>Distribuidora de Licores</title>
+    
 
-</head>
-<body>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
 
-  <header>
-      
-      <h1 >Embajadora de Vinos</h1>
-      <h2>Haga su pedido de vinos a su domicilio</h2> 
-      
-  </header>
-  <div class="modal">
-    <div class="bodymodal">
-        <h3>Productor agregado</h3>
-        <button>X</button>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="inicio">
+      <h1>Distribuidora de Licores</h1>
+
+      <div class=" container-fluid position-sticky top-0">
+      <ul
+        class="nav nav-pills mb-3 py-3 container"
+        id="pills-tab"
+        role="tablist"
+      >
+        <li class="nav-item " role="presentation">
+          <a
+            class="fuente nav-link btn-outline-warning active "
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+            >Inicio</a
+          >
+        </li>
+        <li class= "nav-item" role="presentation">
+          <a
+            class="fuente btn-outline-warning nav-link "
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+            >Productos</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class=" fuente btn-outline-warning nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+            >Carrito</a
+          >
+        </li>
+      </ul>
     </div>
-  </div>
+    </header>
+    
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+    Producto Añadido al carrito!
+    </div>
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+      Producto removido!
+    </div>
 
-  <img class="carrito" src="../respaldo/imagen/carrito-de-compras.png" alt="">
-  
-  <div class="container">
-    <h1>carrito</h1>
-    <hr>
-    <div class="row" id="contenedor-productos"></div>
-  </div>
+    <div class="tab-content" id="pills-tabContent">
+      <div
+        class="tab-pane fade show active "
+        id="pills-home"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+      >
+      <!-- carrousel -->
 
-<template class="container" id="templade-productos">
-  <div class="row" id="contenido">
-    <div class="col-sm-4">
-      <h3>nombre</h3>
-      <p>descripcion</p>
-        <h4>precio</h4>
-        <input class="boton" type="button" value="Agregar" id="vino1" onclick="agregar(1000)" >
-    </div> 
-  </div>
-</template>
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="imagen carousel-item active">
+            <img src="https://image.winudf.com/v2/image1/Y29tLmx1eC5saXZlLndhbGxwYXBlcnMuYW5kLmNyZWF0aXZlLmZhY3Rvcnkud2FsbHBhcGVycy5iYWNrZ3JvdW5kcy5oZC5sd3AuYmVlci5saXZlLndhbGxwYXBlcl9zY3JlZW5fNl8xNTQ1NDkzOTAxXzAwMg/screen-6.jpg?fakeurl=1&type=.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="imagen carousel-item">
+            <img src="https://wallpaperaccess.com/full/1279183.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="imagen carousel-item">
+            <img src="https://www.ecestaticos.com/imagestatic/clipping/341/60d/34160da3c658326abf9696c04f1afac7/la-razon-por-la-que-todas-las-botellas-de-vino-tienen-una-oquedad.jpg?mtime=1580901902" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="descripcion">
+      <div class="nota caja animado colorytexto">
+      <h2>Quienes somos</h2>
+      <p>Somos una distribuidora en expansion con más de 15 años de experiencia, 
+        dedicados a satisfacer las necesidades de Restaurantes, bares, 
+        discoteques , hoteles, giros similares y actualmente personas 
+        naturales (particulares). En nuestra distribuidora contamos con 
+        diferentes tipos de bebidas, ya sea artesanales o de grandes 
+        compañias conocidas, prestamos diferentes tipos de despachos
+        alrededor de el pais, vea nuestro catalago de nuestros Productos mas 
+        vendidos hasta el momento limitado pero iremos agregando a la nececidades
+        de nuestros clientes.</p>
+      </div>
+<br>
+        <div class="box caja animado colorytexto">
+          <h4 class="parrafo">Escribenos</h4>
+          <div class="contenido">
+            <form action="#">
+              <div class="email parrafo">Email</div>
+              <input class="tamano" type="email" required>
+              <div class="mensaje">
+                <div class="texto parrafo">Mensaje</div>
+                <textarea class="tamano" cols="2" rows="5" required></textarea>
+              </div>
+              <div class="boton parrafo">
+                <button class="btn btn-warning colorytexto" type="submit">ENVIAR</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
 
-<script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
 
-</body>
+      </div>
 
+      
+        <!-- Pestaña 2 -->
+      <div
+        class="tab-pane fade container"
+        id="pills-profile"
+        role="tabpanel"
+        aria-labelledby="pills-profile-tab"
+      >
+        <h2 class="h4 m-4 colorytexto">Productos</h2>
+
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 inicio rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center colorytexto">Cerveza</h5>
+                <div class="card-body">
+                <p class="card-text text-white-50 description">bebida alcohólica, preparada a base de cebada u otros cereales.</p>
+                <h5 class="colorytexto">Precio: <span class="precio">$ 3000</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-warning button colorytexto">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 inicio rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center colorytexto">Cerveza con Miel</h5>
+                <div class="card-body">
+                <p class="card-text text-white-50 description">Contiene menos grados de alcohol, con un toque dulce al paladar.</p>
+                <h5 class="colorytexto">Precio: <span class="precio">$ 3500</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-warning button colorytexto">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 inicio rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center colorytexto">Vino Tinto</h5>
+                <div class="card-body">
+                <p class="card-text text-white-50 description">Creado en base a la uva negra o rose, fermentado en barril de roble.</p>
+                <h5 class="colorytexto">Precio: <span class="precio">$ 4000</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-warning button colorytexto">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 inicio rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center colorytexto">Vino Blanco</h5>
+                <div class="card-body">
+                <p class="card-text text-white-50 description">Creado en base de uva blanca o dulce, fermentado en barril de roble.</p>
+                <h5 class="colorytexto">Precio: <span class="precio">$ 4000</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-warning button colorytexto">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 inicio rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center colorytexto">whisky </h5>
+                <div class="card-body">
+                <p class="card-text text-white-50 description">bebida obtenida por la destilacion de la malta o cebada, centeno o trigo.</p>
+                <h5 class="colorytexto">Precio: <span class="precio">$ 8500</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-warning button colorytexto">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 inicio rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center colorytexto">whiky irlandes</h5>
+                <div class="card-body">
+                <p class="card-text text-white-50 description">Mismo proceso pero un añejamiento mayor al whisky tradicional.</p>
+                <h5 class="colorytexto">Precio: <span class="precio">$ 10500</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-warning button colorytexto">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 inicio rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center colorytexto">Ron </h5>
+                <div class="card-body">
+                <p class="card-text text-white-50 description">Bebida obtenida al destilar la caña de azucar</p>
+                <h5 class="colorytexto">Precio: <span class="precio">$ 7000</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-warning button colorytexto">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 inicio rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center colorytexto">Vodka</h5>
+                <div class="card-body">
+                <p class="card-text text-white-50 description">Bebida de origen ruso, obtenida al moler el maiz y se agregan elementos leudantes</p>
+                <h5 class="colorytexto">Precio: <span class="precio">$ 6500</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-warning button colorytexto">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+      <!-- pestana 3 carrito de compras-->
+      <div
+        class="tab-pane fade carrito"
+        id="pills-contact"
+        role="tabpanel"
+        aria-labelledby="pills-contact-tab"
+      >
+      
+      <table class="table inicio table-hover">
+        <thead>
+          <tr class="colorytexto">
+            <th scope="col">#</th>
+            <th scope="col">Productos</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          
+        
+          
+        </tbody>
+      </table>
+      <br><br>
+      <div class="row mx-4">
+        <div class="col">
+          <h3 class="itemCartTotal inicio text-white">Total: 0</h3>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <button class="btn btn-success ">COMPRAR</button>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+     
+    <footer class="bg-dark p-3 mt-5">
+      <p class="text-center m-0 text-muted">NT JS - DISTRIBUIDORA DE LICORES</p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+    </body>
 </html>
